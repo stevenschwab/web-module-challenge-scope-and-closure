@@ -61,6 +61,7 @@ You will be running your tests in one terminal and debugging in the other. As yo
 Edit the `ReadMe` file with your answers to the questions below.
 
 1. In your own words, define closure (1-2 sentences).
+When a function is declared and created, a new scope is also created. Any variables declared within that function's scope will be enclosed in a lexical/private scope that belongs to that function. If some variable isn't defined in a function's scope, the function will look outside the scope chain and search for a variable being referenced in the outer scope. This is what closure is all about.
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -82,8 +83,11 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+Taking in the variable name because name is not defined in the function.
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
-c. What is the lexical scope of `newRoll`? 
+Name "Dan" is the same but the newRoll number is different.
+c. What is the lexical scope of `newRoll`?
+newRoll is local scope.
 
 
 ### Task 3 - Stretch Goals
